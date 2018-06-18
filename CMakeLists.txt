@@ -22,8 +22,10 @@ add_executable( simulate_attack_1 programs/simulate_attack_1.cpp ${HEADERS} ${SO
 add_executable( input_data_set_handle programs/input_data_set_handle.cpp ${HEADERS} ${SOURCE_EXE} )
 add_executable( stress_test programs/stress_test.cpp ${HEADERS} ${SOURCE_EXE} )
 add_executable( test_1 programs/test_1.cpp ${HEADERS} ${SOURCE_EXE} )
+add_executable( scenario_handler programs/scenario_handler.cpp ${HEADERS} ${SOURCE_EXE} )
 
 target_link_libraries( simulate_attack_1 singularity boost_system)
 target_link_libraries( input_data_set_handle singularity boost_system)
 target_link_libraries( stress_test singularity boost_system)
 target_link_libraries( test_1 singularity boost_system)
+target_link_libraries( scenario_handler singularity boost_system)
